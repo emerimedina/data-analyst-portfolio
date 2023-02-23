@@ -1,50 +1,156 @@
+/* Reset styles */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* Typography */
 body {
   font-family: Arial, sans-serif;
+  font-size: 16px;
   line-height: 1.5;
+  color: #444;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
+h1, h2, h3 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav li:not(:last-child) {
-  margin-right: 1rem;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-section {
-  margin-bottom: 2rem;
+h1 {
+  font-size: 2.5rem;
 }
 
 h2 {
   font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
   margin-bottom: 1rem;
 }
 
-ul {
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.site-title {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.site-nav {
+  display: flex;
+  list-style: none;
+}
+
+.site-nav li {
+  margin-left: 2rem;
+}
+
+.site-nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Hero section */
+.hero {
+  background-color: #f7f7f7;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #333;
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #666;
+}
+
+/* About section */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.about p {
+  flex: 1 0 60%;
+  margin-right: 2rem;
+}
+
+.about img {
+  flex: 1 0 35%;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+/* Skills section */
+.skills {
+  margin-top: 4rem;
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.skills li {
+  flex: 1 0 calc(33.33% - 1rem);
+  margin: 1rem;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.skills h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.skills p {
+  font-size: 1.25rem;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background-color: #f7f7f7;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-text {
+  color: #666;
+}
+
+.footer-text a {
+  color: #333;
+  text-decoration: none;
+}
